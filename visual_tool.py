@@ -7,7 +7,7 @@ class MoveBraces(Scene):
             "\\frac{d}{dx}f(x)g(x)=",       #0
             "f(x)\\frac{d}{dx}g(x)",        #1
             "+",                            #2
-            "g(x)\\frac{d}{dx}f(x)"         #3
+            "g(x)\\frac{d}{dx}f(x)" , color = "#4a201c"        #3
         )
         self.play(Write(text))
         brace1 = Brace(text[1], UP, buff = SMALL_BUFF)
