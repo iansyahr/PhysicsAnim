@@ -1,7 +1,7 @@
 #SEMI FINAL
 
 from manim import *
-config.background_color = '#f1f1f1'
+config.background_color = '#ece6e2'
 
 class Partikel(Scene):
   def construct(self):
