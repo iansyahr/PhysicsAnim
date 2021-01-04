@@ -42,7 +42,7 @@ class Partikel(Scene):
     self.play(GrowFromCenter(panah))
     self.play(Write(jaraktext.next_to(panah,DOWN)))
     self.wait()
-    self.play(fadegrup.animate.shift(UP*2))
+    self.play(fadegrup.animate.shift(UP*1.5))
     self.play(ReplacementTransform(p1text[0].copy(),coulomb[1]),
               ReplacementTransform(p2text[0].copy(),coulomb[2]),
               ReplacementTransform(jaraktext[0].copy(),coulomb[4]),
