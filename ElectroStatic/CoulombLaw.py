@@ -15,8 +15,10 @@ class Partikel(Scene):
     p2.set_fill('#db462c',opacity = 1) # red color
     p2.set_stroke(color=BLACK, width=1)
 
+    #Position p1 and p2
     p1.shift(LEFT*3)
     p2.shift(RIGHT*3)
+    
     #Grouping p1 and p2 to pgrup
     pgrup = VGroup(p1,p2)
 
@@ -33,6 +35,7 @@ class Partikel(Scene):
     fadegrup = VGroup(textgrup,pgrup,panah)
     fadegrup1 = VGroup(fadegrup,coulomb)
 
+    #Animate
     self.play(FadeInFrom(pgrup,direction = DOWN),run_time = 1)
     self.play(Write(p1text.next_to(p1,DOWN)))
     self.play(Write(p2text.next_to(p2,DOWN)))
